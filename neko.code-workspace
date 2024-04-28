@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "noraneko"
+		},
+		{
+			"path": "koneko"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"cSpell.words": [
+			"rodi",
+			"blacksheep",
+			"koneko",
+			"noraneko",
+			"pinia",
+			"rushstack",
+			"uvicorn",
+			"vueuse",
+		]
+	}
+}

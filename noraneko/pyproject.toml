@@ -1,0 +1,32 @@
+[project]
+name = "noraneko"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Rychanya", email = "rychanya@gmail.com"},
+]
+dependencies = [
+    "blacksheep>=2.0.7",
+    "uvicorn>=0.29.0",
+]
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project.scripts]
+noraneko-cli = "noraneko.server:run"
+
+[tool.ruff]
+line-length = 120
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "nox>=2024.3.2",
+    "ruff>=0.3.7",
+]
