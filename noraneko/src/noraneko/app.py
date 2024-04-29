@@ -3,7 +3,6 @@ from typing import cast
 from blacksheep import Application
 from rodi import Container
 
-from noraneko.game import GameStore
 from noraneko.queue_wrapper import Lobby, QueueManager
 from noraneko.routs import router
 
@@ -16,5 +15,4 @@ app.use_cors(allow_methods="*", allow_origins="http://localhost:5173")
 async def lifespan():
     cast(Container, app.services).add_instance(QueueManager())  # type: ignore
     cast(Container, app.services).add_instance(Lobby())  # type: ignore
-    cast(Container, app.services).add_instance(GameStore())  # type: ignore
     yield
