@@ -1,8 +1,10 @@
-from asyncio import sleep
 from typing import Protocol
 
 
 class GameEvent: ...
+
+
+class GameData: ...
 
 
 class EventSource(Protocol):
@@ -18,6 +20,5 @@ class GameEngine:
     def __aiter__(self):
         return self
 
-    async def __anext__(self):
-        await sleep(1)
-        return 1
+    async def __anext__(self) -> GameEvent:
+        return await self._event_source()
