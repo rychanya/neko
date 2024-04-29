@@ -8,6 +8,7 @@ authors = [
 dependencies = [
     "blacksheep>=2.0.7",
     "uvicorn>=0.29.0",
+    "taskiq>=0.11.3",
 ]
 requires-python = ">=3.12"
 readme = "README.md"
