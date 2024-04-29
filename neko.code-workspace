@@ -12,14 +12,15 @@
 	],
 	"settings": {
 		"cSpell.words": [
-			"rodi",
 			"blacksheep",
 			"koneko",
 			"noraneko",
 			"pinia",
+			"rodi",
 			"rushstack",
+			"taskiq",
 			"uvicorn",
-			"vueuse",
+			"vueuse"
 		]
 	}
 }
