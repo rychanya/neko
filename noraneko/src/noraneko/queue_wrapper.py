@@ -66,14 +66,3 @@ class QueueWrapper:
         self, exc_type: type[BaseException] | None, exc_value: BaseException | None, traceback: TracebackType | None
     ) -> bool | None:
         self.manager.discard(self)
-
-
-class Lobby:
-    def __init__(self) -> None:
-        self.players: set[str] = set()
-
-    def add(self, player_id: str) -> None:
-        self.players.add(player_id)
-
-    def discard(self, player_id: str) -> None:
-        self.players.discard(player_id)
