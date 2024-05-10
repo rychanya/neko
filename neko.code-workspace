@@ -12,10 +12,15 @@
 	],
 	"settings": {
 		"cSpell.words": [
+			"aconnect",
+			"aiter",
+			"asgi",
 			"blacksheep",
+			"httpx",
 			"koneko",
 			"noraneko",
 			"pinia",
+			"pytestmark",
 			"rodi",
 			"rushstack",
 			"taskiq",
