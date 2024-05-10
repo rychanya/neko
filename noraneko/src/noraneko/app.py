@@ -7,7 +7,7 @@ from noraneko.broker import broker
 from noraneko.queue_wrapper import QueueManager
 from noraneko.routs import router
 
-app = Application(router=router)
+app = Application(router=router, show_error_details=True)
 
 app.use_cors(allow_methods="*", allow_origins="http://localhost:5173")
 
